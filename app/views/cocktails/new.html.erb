@@ -1,0 +1,13 @@
+<h1>Welcome to <strong>your</strong> Cocktails Page !!!</h1>
+
+<%= simple_form_for @cocktail do |f| %>
+<%= f.label :name %>
+<%= f.text_area :name %>
+<%= f.submit %>
+<% end %>
+
+
+
+
+<%= link_to 'New Cocktail', new_cocktail_path %> |||||  <%= link_to "Go back to cocktail", cocktails_path %> ||||
+
