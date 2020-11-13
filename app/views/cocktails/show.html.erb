@@ -3,6 +3,10 @@
 <br>
 <div class="container text-center"><h2> <%= @cocktail.name %> </h2>
 
+  <% @article.photos.each do |photo| %>
+  <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+<% end %>
+
 
 <% @cocktail.doses.each do |dose| %>
 <p> <%= dose.description %> <%= dose.ingredient.name %> |||||| <%= link_to "Remove", dose_path(dose), method: :delete,
@@ -17,7 +21,9 @@
 <br>
 
 <%= link_to "Add Dose to your Cocktail", new_cocktail_dose_path(@cocktail) %>
-<!-- <li><%= link_to "Delete that cocktail", cocktails_path %></li>
- -->
+<br>
+<br>
+ <%= link_to "Delete that cocktail", cocktail_path(@cocktail), method: :delete %>
+
 
 </div>
