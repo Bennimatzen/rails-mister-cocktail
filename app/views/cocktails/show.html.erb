@@ -3,9 +3,9 @@
 <br>
 <div class="container text-center"><h2> <%= @cocktail.name %> </h2>
 
-  <% @article.photos.each do |photo| %>
-  <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
-<% end %>
+  <%# @article.photos.each do |photo| %>
+  <%#= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+  <%# end %>
 
 
 <% @cocktail.doses.each do |dose| %>
