@@ -1,10 +1,19 @@
 
+<div class="container text-center">
 
-
-<h1>Welcome to my Cocktails</h1>
+<h1 class="text-center">Welcome to <strong>your</strong> Cocktails Page</h1>
 
   <% @cocktails.each do |cocktail| %>
-        <li><%= link_to cocktail.name, cocktail_path(cocktail)%></li>
+        <li><%= link_to cocktail.name, cocktail_path(cocktail)%>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+        </li>
 
 
     <% end %>
@@ -12,3 +21,7 @@
     <br>
 
 <%= link_to "New Cocktail", new_cocktail_path, class: "btn btn-primary" %>
+<br>
+<br>
+<br>
+</div>

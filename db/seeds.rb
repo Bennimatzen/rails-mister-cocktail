@@ -18,14 +18,14 @@
 # Ingredient.create(name: "juice")
 # Ingredient.create(name: "jägermeister")
 
-# Cocktail.create(name:"Mojito")
-# Cocktail.create(name:"Bloody Mary")
-# Cocktail.create(name:"Sex on the Beach")
-# Cocktail.create(name:"Magarita")
-# Cocktail.create(name:"Pina Colada")
-# Cocktail.create(name:"Jägermeister")
-# Cocktail.create(name:"Martini")
-# Cocktail.create(name:"Vodca")
+Cocktail.create(name:"Mojito")
+Cocktail.create(name:"Bloody Mary")
+Cocktail.create(name:"Sex on the Beach")
+Cocktail.create(name:"Magarita")
+Cocktail.create(name:"Pina Colada")
+Cocktail.create(name:"Jägermeister")
+Cocktail.create(name:"Martini")
+Cocktail.create(name:"Vodca")
 
 
 require 'json'

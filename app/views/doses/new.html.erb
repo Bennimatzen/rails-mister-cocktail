@@ -1,10 +1,9 @@
 <h1>Welcome to <strong>your</strong> Doses Page !!!</h1>
 
 <%= simple_form_for [@cocktail, @dose] do |f| %>
-<%= f.label :description %>
-<%= f.text_area :description %>
-<%= f.association :ingredient %>
-<%= f.submit class: "btn btn-primary" %>
+  <%= f.input :description %>
+  <%= f.association :ingredient %>
+  <%= f.submit class: "btn btn-primary" %>
 
 <% end %>
 
