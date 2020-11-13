@@ -12,6 +12,7 @@
 <%= simple_form_for @cocktail do |f| %>
 <%= f.label :name %>
 <%= f.text_area :name %>
+<%= f.input :photo, as: :file %>
 <%= f.submit %>
 <% end %>
 
